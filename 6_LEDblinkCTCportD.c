@@ -1,3 +1,6 @@
+// LED blinks continuously using CTC mode(clear timer on compare match)
+// LED connected to port D
+
 #include <avr/io.h>
 #define F_CPU 16000000UL    //Define CPU clock as 16Mhz
 #include <avr/interrupt.h>
