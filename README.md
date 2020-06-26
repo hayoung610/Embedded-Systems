@@ -1,8 +1,8 @@
 # Embedded
 Embedded Systems coursework
 
-Programming of ATmega328 microcontroller using Arduino.
+Programming of ATmega328 microcontroller
+
+Arduino Uno used
 
 Low-level programming using Assembly and C
-
-# Used circuits
