@@ -1,5 +1,7 @@
 ; Blink with period 1s continuously
-; When there is an interrupt, Blink with period 0.5s twice
+; When there is an interrupt, Blink twice quickly (blink with period 0.5s)
+; The interrupt is a switch connected to PIN2 of PORTD
+; LED is connected to PIN7 of PORTD
 
 .include "../m328Pdef.inc"
 .org 0x0000
