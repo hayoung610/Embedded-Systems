@@ -9,8 +9,8 @@ int main(void)
 
 {
 	cli();
-	DDRD = 0xFF; // setting to ouput mode
-	PORTD = 0x00; // all pins are low
+	DDRD = 0xFF; 		// setting to ouput mode
+	PORTD = 0x00; 		// all pins are low
 
 	// clearing bit 7, setting REFS0 for reference voltage and ADLAR
 	ADMUX &= ~(1<<REFS1);
@@ -22,13 +22,13 @@ int main(void)
 	// Input clock prescaler, 125 kHz
 	ADCSRA |= (1<<ADEN)|(1<<ADSC)|(1<<ADIE)|(1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0);
 
-	sei(); //Activate the interrupt
+	sei(); 			//Activate the interrupt
 	while(1){}
 	return 0;
 }
 
 // ADC complete interrupt
 ISR(ADC_vect){
-    PORTD = ADCH; // Setting port D as the digital value
-    ADCSRA |= (1<<ADSC); // Starting the conversion again
+    PORTD = ADCH; 		// Setting port D as the digital value
+    ADCSRA |= (1<<ADSC); 	// Starting the conversion again
 }
