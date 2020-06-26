@@ -1,4 +1,4 @@
-# Embedded
+# Embedded Systems
 Embedded Systems coursework
 
 Programming of ATmega328 microcontroller
